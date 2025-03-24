@@ -21,3 +21,6 @@ s3=codesters.Sprite("soccer", 100, -100)
 s3.set_size(0.6)
 s4=codesters.Sprite ("jungkook", -100, 100)
 s4.set_size(0.6)
+
+message1=codesters.Text("Jalen Meeker",0,220,"Red")
+message2=codesters.Text("Let the be them and let us be us",0,-220,"black")
