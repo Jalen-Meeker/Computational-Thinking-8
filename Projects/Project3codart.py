@@ -23,4 +23,3 @@ for i in range(36):
 
 # Hide the turtle and keep the window open
 artist.hideturtle()
-screen.mainloop() 
