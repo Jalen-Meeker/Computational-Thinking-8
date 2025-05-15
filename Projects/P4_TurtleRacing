@@ -4,7 +4,7 @@ def set_background(image_filename):
 	screen = turtle.Screen()
 try:
         screen.bgpic(f"/workspaces/Computational-Thinking-8/Backgrounds/{image_filename}.png")
-	except:
+        except:
         screen.bgpic(f"/workspaces/Computational-Thinking-8/Backgrounds/{image_filename}.gif")
 def create_sprite(image_filename, x=0, y=0):
 	image_file = f"/workspaces/Computational-Thinking-8/Images/{image_filename}.gif"
