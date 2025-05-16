@@ -59,17 +59,19 @@ while True:
 	timer += 1  
 	 
     
- 	# TODO - code for automatic actions
-
-
+ 	
+	s2 =create fox
+	s2_move left
+	if get_distance (s1,s2) < 50
+		live - = 1
 
 
 
 
 	window.update()
 
-	# if :
-	# 	break
+	  if : lives = 0
+		break
 	
 
 print("gameover")

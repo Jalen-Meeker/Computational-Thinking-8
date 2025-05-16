@@ -1,11 +1,12 @@
 # Section 1 - Helper functions
+# Section 1 - Helper functions
 import turtle, time, random
 def set_background(image_filename):
 	screen = turtle.Screen()
-try:
-        screen.bgpic(f"/workspaces/Computational-Thinking-8/Backgrounds/{image_filename}.png")
-        except:
-        screen.bgpic(f"/workspaces/Computational-Thinking-8/Backgrounds/{image_filename}.gif")
+	try:
+		screen.bgpic(f"/workspaces/Computational-Thinking-8/Backgrounds/{image_filename}.png")
+	except:
+		screen.bgpic(f"/workspaces/Computational-Thinking-8/Backgrounds/{image_filename}.gif")
 def create_sprite(image_filename, x=0, y=0):
 	image_file = f"/workspaces/Computational-Thinking-8/Images/{image_filename}.gif"
 	screen = turtle.Screen()
@@ -15,6 +16,7 @@ def create_sprite(image_filename, x=0, y=0):
 	sprite.penup()
 	sprite.goto(x,y)
 	return sprite
+
 
 
 # Section 2 - Variables
@@ -44,6 +46,7 @@ speed2 = 4  # speed of player 2
 speed3 = 3  # speed of player 3
 speed4 = 2  # speed of player 4
 
+# Sprite one is the fastest becasue it has the highest set speed, and player 4 is the slowest becasue it has the lowest set speed#
 for i in range(30):  # Increased the number of repeats to 30
     x1 += speed1
     x2 += speed2
@@ -57,16 +60,16 @@ for i in range(30):  # Increased the number of repeats to 30
 
     time.sleep(0.1)  # Small delay to make the movement visible
 
-# Section 5 - Winner
+# # Section 5 - Winner
 # Determine the winner based on x positions
-if x1 >= 500:  # Assuming the finish line is at x=500
-    print("Player 1 wins!")
-elif x2 >= 500:
-    print("Player 2 wins!")
-elif x3 >= 500:
-    print("Player 3 wins!")
-elif x4 >= 500:
-    print("Player 4 wins!")
+if x1 >= x2 and x1 >= x3 and x1 >= x4:
+	print("player 1 wins!")
+elif x2>=x1 and x2>=x3 and x2>=x4:
+	print("player 2 wins!")
+elif x3>=x1 and x3>=x2 and x3>=x4:
+	print("player 3 wins?")
+elif x4>=x1 and x4>=x2 and x4>=x3:
+    print("player 4 wins")
 
 
 
